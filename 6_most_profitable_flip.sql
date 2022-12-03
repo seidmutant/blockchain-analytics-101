@@ -24,6 +24,5 @@ JOIN trades AS B
 ON 
     A.token_id = B.token_id
     AND A.buyer = B.seller
-WHERE 
-    A.block_time < B.block_time
+    AND A.block_time < B.block_time
 ORDER BY 6 DESC

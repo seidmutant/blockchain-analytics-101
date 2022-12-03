@@ -26,8 +26,7 @@ flips AS (
     ON 
         A.token_id = B.token_id
         AND A.buyer = B.seller
-    WHERE 
-        A.block_time < B.block_time
+        AND A.block_time < B.block_time
 )
 
 SELECT 

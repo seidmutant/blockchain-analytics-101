@@ -1,6 +1,5 @@
-SELECT *
-FROM nft."trades"
+SELECT * 
+FROM erc721."ERC721_evt_Transfer" 
 WHERE 
-    nft_contract_address ='\x60bb1e2AA1c9ACAfB4d34F71585D7e959f387769'
-    AND original_currency in ('ETH','WETH')
-    AND block_time >= '2022-10-31'
+    contract_address = '\xbCe3781ae7Ca1a5e050Bd9C4c77369867eBc307e' 
+    AND evt_block_time >= '2022-05-19'
